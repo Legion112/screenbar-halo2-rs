@@ -1,0 +1,18 @@
+[package]
+name = "halo2-cli"
+description = "Host-side tool for the ScreenBar Halo 2 link: encode, decode and send frames"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "halo2"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+halo2-proto = { path = "../halo2-proto", version = "0.1.0" }

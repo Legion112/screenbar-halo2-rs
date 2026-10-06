@@ -1,0 +1,29 @@
+This project builds on public reverse-engineering work by others.
+
+1. Termina1/benq-screenbar-halo2-esphome  (MIT)
+   https://github.com/Termina1/benq-screenbar-halo2-esphome
+   ESPHome bridge in C++. Source of the CRC parameters and the TBCLK
+   synchronous-serial requirement. MIT-licensed, so code may be ported with
+   attribution; this repo reimplements rather than ports.
+
+2. kuzmin-no/BenQ_ScreenBar_HALO_2_HA_integration  (NO LICENSE)
+   https://github.com/kuzmin-no/BenQ_ScreenBar_HALO_2_HA_integration
+   MicroPython bridge with the clearest write-up of the frame format, the
+   pairing address and the address-discovery procedure.
+
+   No license file is present, so the code is all-rights-reserved and MUST NOT
+   be copied. Only the factual protocol description and diagrams from its README
+   are used here — facts are not copyrightable. No code from this project has
+   been read into this one.
+
+3. zeel01/BenQ-ScreenBar-Halo-2-Investigation
+   https://github.com/zeel01/BenQ-ScreenBar-Halo-2-Investigation
+   Teardown photographs identifying the Artery AT32F421C8T7 MCU and the
+   Holtek BC5602 radio in the remote.
+
+4. Holtek BC5602 datasheet
+   https://www.holtek.com/webapi/116711/BC5602v120.pdf
+   Modulation, data rates, SPI interface and whitening support.
+
+BenQ and ScreenBar are trademarks of BenQ Corporation. This project is not
+affiliated with, endorsed by, or supported by BenQ.

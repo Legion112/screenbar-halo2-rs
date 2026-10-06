@@ -1,0 +1,13 @@
+[package]
+name = "halo2-proto"
+description = "no_std codec for the BenQ ScreenBar Halo 2 2.4 GHz control protocol"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]

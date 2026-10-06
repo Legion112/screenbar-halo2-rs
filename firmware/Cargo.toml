@@ -1,0 +1,21 @@
+[package]
+name = "halo2-firmware"
+description = "RP2040 bridge: clocks Halo 2 frames into a BM5602 using PIO"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+# Separate workspace: this crate builds for thumbv6m-none-eabi, the host crates
+# do not. Keeping it out of the root workspace avoids a split target dir.
+[workspace]
+
+[dependencies]
+halo2-proto = { path = "../halo2-proto" }
+
+# NOTE: versions are not pinned or built yet — see firmware/README.md.
+# embassy-rp      = { version = "*", features = ["rp2040", "time-driver"] }
+# embassy-executor = { version = "*", features = ["arch-cortex-m", "executor-thread"] }
+# embassy-usb     = "*"
+# cortex-m-rt     = "0.7"
+# panic-probe     = "0.3"
